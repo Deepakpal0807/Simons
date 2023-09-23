@@ -6,7 +6,7 @@
 .boxes{
     margin: auto;
     /* border: 2px solid black; */
-    height: 600px;
+    height: 550px;
     width: 500px;
     overflow: hidden;
     display: flex;
@@ -19,6 +19,20 @@
     height: 150px;
     border: 10px solid white	;
     border-radius: 20px;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 2px solid white; */
+}
+.button button{
+    width: 150px;
+    /* text-decoration: none; */
+}
+.button button a{
+    text-decoration: none;
+    color: white;
 }
 .box1{
     background-color: #dd4b3e	;
@@ -50,17 +64,36 @@ h3{
     background-color: white;
        border-color: black;
        box-shadow: 3px 3px 2px;
+       scale: 1.2;
+}
+.name{
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+}
+.name p{
+    font-size: 1.3rem;
+}
+span{
+    color: red;
 }
 .userflash{
     background-color: white;
     border-color: black;
     box-shadow: 3px 3px 2px;
+    scale: 1.2;
 }
 
 h1{
     position: absolute;
-    top: 41vh;
-    left: 36vw;
-    font-size: 4rem;
+    top: 37vh;
+    left: 32vw;
+    color: white;
+    font-family: cursive;
+    font-size: 5rem;
     
+}
+.blur{
+    opacity: 0.3;
 }

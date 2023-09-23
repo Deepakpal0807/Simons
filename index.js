@@ -16,6 +16,8 @@ document.addEventListener("keypress",()=>{
         level=0;
         let result=document.querySelector(".result");
         result.innerHTML="";
+        let body=document.body.querySelector("#container");
+        body.classList.remove("blur");
         levelup();
     }
 })
@@ -59,6 +61,10 @@ function checkseq(a){
     }else{
         gamestart=false;
         let result=document.querySelector(".result");
+        let body=document.body.querySelector("#container");
+        body.classList.add("blur");
+
+        
         result.innerHTML=`Your score : ${level-1}`;
         h3.innerHTML=`You lose! press any key to start`;
     }    
