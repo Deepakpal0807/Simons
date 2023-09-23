@@ -22,6 +22,20 @@ document.addEventListener("keypress",()=>{
     }
 })
 
+let start=document.body.querySelector(".start");
+start.addEventListener("click",()=>{
+    if(gamestart==false){
+        console.log("game is started");
+        gamestart=true;
+        level=0;
+        let result=document.querySelector(".result");
+        result.innerHTML="";
+        let body=document.body.querySelector("#container");
+        body.classList.remove("blur");
+        levelup();
+    }
+})
+
 
 function btnflash( rand){ 
 
