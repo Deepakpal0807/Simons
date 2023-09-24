@@ -6,8 +6,8 @@
 .boxes{
     margin: auto;
     /* border: 2px solid black; */
-    height: 80vh;
-    width: 500px;
+    height: 60vh;
+    width: 60vw;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
