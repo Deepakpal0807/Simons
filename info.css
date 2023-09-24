@@ -36,3 +36,10 @@
 span{
     color: red;
 }
+@media (max-width:450px) {{
+    .container{
+        width: 90vw;
+    }
+}
+    
+}
