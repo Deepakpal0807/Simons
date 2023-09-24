@@ -6,7 +6,7 @@
 .boxes{
     margin: auto;
     /* border: 2px solid black; */
-    height: 550px;
+    height: 80vh;
     width: 500px;
     overflow: hidden;
     display: flex;
@@ -18,7 +18,7 @@
     color: white;
     margin: auto;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 20px ;
     /* display: hide; */
   
 }
