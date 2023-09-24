@@ -168,17 +168,18 @@ h1{
     /* left: 32vw; */
     color: white;
     width: 100%;
+  background-color: rgba(82,80,80,0);
     font-family: cursive;
     font-size: 5rem;
     display: flex;
     justify-content: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     
     
 }
 h1 p{
     text-align: center;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 .blur{
     opacity: 0.3;

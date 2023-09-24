@@ -76,6 +76,7 @@ function checkseq(a){
         gamestart=false;
         let result=document.querySelector(".result");
         let result1=result.firstElementChild;
+        // result.style.width=100vw;
         let body=document.body.querySelector("#container");
         body.classList.add("blur");
 
