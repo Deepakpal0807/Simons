@@ -8,14 +8,38 @@
     /* border: 2px solid black; */
     /* height: 70vh; */
     /* margin-top: 20px; */
-    width: 30vw;
+    /* width: 30vw; */
     overflow: hidden;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-evenly;
+    /* justify-content: space-around; */
+    /* align-content: space-evenly; */
+    /* padding: 50px 10px; */
+    /* border: 2px solid black; */
+    justify-content: center;
 }
-@media (max-width:450px) {
+.x{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    /* border: 2px solid red; */
+    width: 400px;
+    /* align-content: center; */
+}
+@media (max-width:380px) {
+    .boxes .x{
+      /* border: 5px solid white; */
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: center;
+
+    }
+   
+}
+/* @media (max-width:450px) {
     .boxes{
         width: 90vw;
     }
@@ -50,8 +74,8 @@
 @media(min-width:900px) and (max-width:1145px){
     .boxes{
         width: 40vw;
-    }
-}
+    } 
+}*/
 .start{
     color: white;
     margin: auto;
@@ -66,13 +90,12 @@
     /* color: red; */
     }
 }
-
 .box{
     width: 150px;
     height: 150px;
     border: 10px solid white	;
     border-radius: 20px;
-    margin-top: 10px;
+    margin: 2vh 1vw;
 }
 .button{
     display: flex;
@@ -142,7 +165,7 @@ span{
 h1{
     position: absolute;
     top: 37vh;
-    left: 32vw;
+    /* left: 32vw; */
     color: white;
     font-family: cursive;
     font-size: 5rem;
