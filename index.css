@@ -6,13 +6,29 @@
 .boxes{
     margin: auto;
     /* border: 2px solid black; */
-    height: 60vh;
-    width: 60vw;
+    height: 70vh;
+    width: 30vw;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
+}
+@media (max-width:450px) {
+    .boxes{
+        width: 90vw;
+        height: 60vh;
+    }
+}
+@media (max-width:375px){
+    .box{
+        margin-top: 20px;
+        width: 100px;
+        height: 100px;
+    }
+    .boxes{
+        height: 90vh;
+    }
 }
 .start{
     color: white;
@@ -28,9 +44,7 @@
     /* color: red; */
     }
 }
-.hide{
-    display: none;
-}
+
 .box{
     width: 150px;
     height: 150px;
