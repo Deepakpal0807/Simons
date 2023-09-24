@@ -148,9 +148,13 @@ h3{
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: 20px;
+    position: fixed;
+    bottom: 1px;
+right: 2vw;
 }
 .name p{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    font-family: cursive;
 }
 span{
     color: red;
@@ -163,12 +167,12 @@ span{
 }
 
 h1{
-    position: absolute;
+    position: fixed;
     top: 35vh;
     /* left: 32vw; */
     color: white;
     width: 100%;
-  background-color: rgba(82,80,80,0);
+  /* background-color: rgba(82,80,80,0); */
     font-family: cursive;
     font-size: 5rem;
     display: flex;
@@ -177,10 +181,7 @@ h1{
     
     
 }
-h1 p{
-    text-align: center;
-    /* border: 2px solid white; */
-}
+
 .blur{
     opacity: 0.3;
 }

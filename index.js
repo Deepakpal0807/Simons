@@ -75,13 +75,9 @@ function checkseq(a){
     }else{
         gamestart=false;
         let result=document.querySelector(".result");
-        let result1=result.firstElementChild;
-        // result.style.width=100vw;
+        result.innerHTML=`Your score : ${level-1}`;
         let body=document.body.querySelector("#container");
         body.classList.add("blur");
-
-        
-        result1.innerHTML=`Your score : ${level-1}`;
         h3.innerHTML=`You lose! press any key to start`;
     }    
 }
