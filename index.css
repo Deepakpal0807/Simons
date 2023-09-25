@@ -150,13 +150,15 @@ h3{
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: 20px;
-    position: sticky;
+    position: fixed;
     bottom: 1px;
-right: 4vw;
+    right: 4vw;
+    /* border: 2px solid red; */
 }
 .name p{
     font-size: 1.1rem;
     font-family: cursive;
+    padding: 0px 1vw;
 }
 /* @media (max-width:380px){
     .name{
