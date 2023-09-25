@@ -8,7 +8,9 @@ let i=0;
 
 let  h3=document.querySelector("h3");
 
-
+if(document.body.width<'450px'){
+    h3.innerHTML=`Press Start Button.`;
+} 
 document.addEventListener("keypress",()=>{
     if(gamestart==false){
         console.log("game is started");

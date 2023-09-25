@@ -82,6 +82,7 @@
     margin-top: 20px;
     margin-bottom: 20px ;
     /* display: hide; */
+    font-size: 2rem;
   
 }
 @media (min-width: 480px){
@@ -148,7 +149,7 @@ h3{
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: 20px;
-    position: fixed;
+    position: sticky;
     bottom: 1px;
 right: 4vw;
 }
@@ -156,6 +157,12 @@ right: 4vw;
     font-size: 1.1rem;
     font-family: cursive;
 }
+/* @media (max-width:380px){
+    .name{
+        width: 9vw;
+        border: 2px solid white;
+    }
+} */
 span{
     color: red;
 }
