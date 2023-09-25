@@ -45,7 +45,7 @@ function btnflash( rand){
     rand.classList.add("flash");
     setTimeout(() => {
         rand.classList.remove("flash");
-    }, 300);
+    }, 400);
 
 }
 
@@ -55,7 +55,7 @@ function userflash( rand){
     rand.classList.add("userflash");
     setTimeout(() => {
         rand.classList.remove("userflash");
-    }, 300);
+    }, 400);
 
 }
 
@@ -72,7 +72,7 @@ function checkseq(a){
             setTimeout(()=>{
 
                 levelup();
-            },1500);
+            },1700);
         }
     }else{
         gamestart=false;
@@ -80,9 +80,27 @@ function checkseq(a){
         result.innerHTML=`Your score : ${level-1}`;
         let body=document.body.querySelector("#container");
         body.classList.add("blur");
+        let reset=document.body.querySelector("#reset");
+        reset.classList.remove("reset1");
         h3.innerHTML=`You lose! press any key to start`;
     }    
 }
+
+let reset=document.body.querySelector("#reset");
+reset.addEventListener("click",()=>{
+    if(gamestart==false){
+        console.log("game is started");
+        gamestart=true;
+        level=0;
+        let reset=document.body.querySelector("#reset");
+        reset.classList.add("reset1");
+        let result=document.querySelector(".result");
+        result.innerHTML="";
+        let body=document.body.querySelector("#container");
+        body.classList.remove("blur");
+        levelup();
+    }
+})
 
 function levelup(){
     // console.log(userseq);
